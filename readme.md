@@ -1,4 +1,4 @@
-# Nom du Projet ( Site vitrine - Restaurant "H-burger")
+# Site vitrine - Restaurant "H-burger"
 
 Une application web statique qui présente le site vitrine d’un restaurant, avec menu, galerie photo.
 
