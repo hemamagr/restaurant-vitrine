@@ -1,0 +1,157 @@
+body{
+    margin: 0;/*marge externe*/
+    padding: 0;/*mg interne*/
+    background-image: url(images/les-planches-de-bois-avec-le-restaurant-flou-fond.jpg);
+    background-size: cover;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+nav{
+background-color: rgb(231, 139, 53);
+display: flex;/* aligner */
+flex-wrap: wrap;/* pour version mobile empiler*/
+
+align-items: center;
+border-bottom:5px solid #6f6f6f; /*pour la ligne de séparation*/
+}
+nav h1{/*logo/*/
+    color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin-left: 15px;
+    margin-right:25em;
+}
+
+nav.onglets{
+    margin-top: 3px;
+   
+ 
+    
+}
+@media(max-width: 680px){
+    nav.onglets{
+        margin-left: 0px;
+        margin-bottom: 20px;
+
+    }
+  .main .card{
+        margin: 10px;
+    }
+.main .content .card .right img{
+    height: 200px;
+    width: 100%;
+    margin-top: 0px;
+}
+.main .content .card{
+    display: block;
+}
+footer{
+    padding: 30px;
+}
+
+}
+
+nav .onglets a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: 3px;
+    color: black;
+    margin-right: 5em;
+    
+    padding-bottom: 5px;/* la marge intrne entre le texte et le soulignement*/
+}
+header{
+    display: flex;/*aligner sur la meme ligne*/
+    flex-direction: column;/*les organiser en clmn*/
+    align-items: center;/*centré au milieu de header*/
+    background-size: cover;
+    padding: 30px;
+}
+header h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    color:rgb(2, 93, 121);
+    
+
+}
+header h4{
+   color:rgb(3, 59, 77);
+   
+   font-size: 36px;
+   text-align: center;/*aligner text a format mob*/
+   border-bottom: 1px solid #f1f1f1;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.main{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.main .content .card .right img{/*on a redimensionné les img ca aidé au responsive*/
+    height: 300px;
+    width: 400px;
+    margin-top: 5px;/*espce entre img et txt*/
+
+}
+.main.content.card.right{
+    flex: 0 0 70%;
+}
+
+.main .content .card .left{
+   padding: 20px;
+    flex: 0 0 30%;
+    background-color: rgb(231, 139, 53);
+    color: black;
+   
+}
+footer{
+    background-color:rgb(231, 139, 53);
+    color: black;
+    margin-top: 40px;
+    border-top: 5px solid #6f6f6f;
+    font-size: 20 px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 30px 100px;
+}
+footer h1{
+    font-family:'playfair Display',sans-serif;
+    border-bottom: 1px solid #fff;
+    width: 20%;
+    
+    padding-bottom: 5px;
+}
+footer .services{
+    display: flex;
+    flex-wrap: wrap;/*permet d'empiler les elts en format mob et non les aligner */
+                             /*entre dans le responsive*/
+    margin-top: -10px;
+}
+footer .services .service{
+    margin-right: 30px;
+    padding: 10px;
+}                                        
+footer .services .service p{
+    max-width: 300px;/*la marge qui sera réduite pour que nos elts s'aligne en colonne*/ 
+                           /*car flex wrap ne le permet pas donc pour régler ce pb*/
+    font-size:15 px;
+}
+footer #contact{
+    color: black;
+}
+
+
